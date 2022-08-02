@@ -1,42 +1,43 @@
-package encapsulation;
-public class Encapsulate 
-{ 
-    private String Name; 
-    private int Roll; 
-    private int Age;
-    public int getAge()  
-    { 
-      return Age; 
-    } 
-    public String getName()  
-    { 
-      return Name; 
-    } 
-    public int getRoll()  
-    { 
-       return Roll; 
-    } 
-    public void setAge( int newAge) 
-    { 
-      Age = newAge; 
-    } 
-    public void setName(String newName) 
-    { 
-      Name = newName; 
-    } 
-    public void setRoll( int newRoll)  
-    { 
-      Roll = newRoll; 
-    } 
+package strings;
+public class stringDemo {
+	public static void main(String[] args) {
+		//methods of strings
+		System.out.println("Methods of Strings");
+		
+		String sl=new String("Hello World");
+		System.out.println(sl.length());
 
-  public static void main (String[] args)  
-    { 
-        Encapsulate obj = new Encapsulate(); 
-        obj.setName("Harsh"); 
-        obj.setAge(19); 
-        obj.setRoll(51); 
-        System.out.println("My name: " + obj.getName()); 
-        System.out.println("My age: " + obj.getAge()); 
-        System.out.println("My roll: " + obj.getRoll());      
-    } 
+		//substring
+		String sub=new String("Welcome");
+		System.out.println(sub.substring(2));
+
+		//String Comparison
+		String s1="Hello";
+		String s2="Heldo";
+		System.out.println(s1.compareTo(s2));
+
+		//IsEmpty
+		String s4="";
+		System.out.println(s4.isEmpty());
+
+		//toLowerCase
+		String s5="Hello";
+		System.out.println(s1.toLowerCase());
+		
+		//replace
+		String s6="Heldo";
+		String replace=s2.replace('d', 'l');
+		System.out.println(replace);
+		//equals
+		String x="Welcome to Java";
+		String y="WeLcOmE tO JaVa";
+		System.out.println(x.equals(y));
+		
+		
+				
+		
+	}
+
+
+
 }
